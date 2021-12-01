@@ -3,18 +3,29 @@
   /* height: 100vh; */
   overflow: hidden;
   /* position: fixed; */
+
+  /* background: linear-gradient(
+    to bottom,
+    #160543,
+    #260c32,
+    #3a164c,
+    #591772,
+    #2d134e,
+    #df1753
+  );
+  background-size: 100%;
+  height: 100vh; */
 }
 
-
-.stop-scroll{
+.stop-scroll {
   animation: stopscroll 3s 1;
 }
 
-@keyframes stopscroll{
-  from{
+@keyframes stopscroll {
+  from {
     overflow-y: hidden;
   }
-  to{
+  to {
     overflow-y: auto;
   }
 }

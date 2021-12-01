@@ -1,6 +1,7 @@
 import "./App.css";
 import Homepage from "./pages/Homepage/homepage.component";
 import { IKContext } from "imagekitio-react";
+import React from "react";
 
 function App() {
   return (
