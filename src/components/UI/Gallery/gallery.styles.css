@@ -1,0 +1,19 @@
+.gallery {
+  padding: 10rem 8rem 0 8rem;
+  background-color: #2d1342;
+}
+
+.gallery__title {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.gallery__gradient {
+  height: 25rem;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(-3%, #2d134e), color-stop(65%, #e86fce1a));
+  background-image: linear-gradient(to top, #2d134e -3%, #e86fce1a 65%);
+  -webkit-clip-path: ellipse(50% 67% at 50% 100%);
+          clip-path: ellipse(50% 67% at 50% 100%);
+  margin: 0rem -8rem;
+}
+/*# sourceMappingURL=gallery.styles.css.map */

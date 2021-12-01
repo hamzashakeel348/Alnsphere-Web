@@ -1,0 +1,11 @@
+.slider {
+  color: red;
+  // width: 75vw;
+  margin: 0 auto;
+
+  &__img {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 25px;
+  }
+}

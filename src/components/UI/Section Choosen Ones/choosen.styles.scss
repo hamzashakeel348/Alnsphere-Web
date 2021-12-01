@@ -1,0 +1,93 @@
+@mixin media($args) {
+  @media screen and (max-width: $args) {
+    @content;
+  }
+}
+
+.choosen {
+  padding: 5rem 10rem;
+  width: 100%;
+  //   color: red;
+  // background-color: #2d134e;
+
+  &__title {
+    margin-bottom: 5rem;
+    text-align: center;
+    background: linear-gradient(to right, #03a9f4, #bc1eb6, #d400d0);
+    background-clip: text;
+    text-transform: capitalize;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .swiper {
+    max-width: 400px;
+    // height: 600px;
+    transition: all 0.2s ease;
+    padding: 36px;
+  }
+  
+  .swiper-slide {
+    // display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    margin-right: 15px;
+  }
+
+  .swiper-slide-next + .swiper-slide {
+    transform:  perspective(600px) rotateY(-25deg) scale(0.75);
+    opacity: 0.6;
+  }
+  .swiper-slide-active {
+    transform: perspective(600px) rotateY(25deg) scale(0.75);
+    opacity: 1;
+    border: 2px solid rgb(168, 0, 126);
+  }
+
+  .swiper-slide-active:hover{
+    top: -40px;
+  }
+
+  // .swiper-slide-active img{
+  //   transition: 0.4s linear;
+  // }
+
+  // .swiper-slide-active img:hover{
+  //   transform: rotateY(28deg) !important;
+  // }
+
+  .swiper-slide-next {
+    overflow: visible !important;
+  }
+  .swiper-slide-next img {
+    border-radius: 25px;
+    border: 2px solid rgb(168, 0, 126);
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 42%;
+    @include media(1400px) {
+      top: 30%;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .choosen{
+    padding: 5rem 0rem;
+    width: 100%;
+  }
+  .choosen__title{
+    margin-bottom: 0px;
+    line-height: 5rem;
+  }
+  .swiper {
+    max-width: 900px;
+    // height: 600px;
+    transition: all 0.2s ease;
+    padding: 0px;
+  }
+}

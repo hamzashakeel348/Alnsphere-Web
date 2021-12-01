@@ -1,0 +1,78 @@
+@mixin media($args) {
+  @media screen and (max-width: $args) {
+    @content;
+  }
+}
+
+.iconClassName {
+  width: 30px;
+  object-fit: contain;
+}
+
+.footer {
+  background-color: #2d134e;
+  display: flex;
+  min-height: 30rem;
+  padding: 6rem 25rem;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  @include media(1200px) {
+    width: 100%;
+    padding: 6rem 5rem;
+    justify-content: space-around;
+  }
+  @include media(1000px) {
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  &__logo {
+    width: 200px;
+    height: 200px;
+    // background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include media(1000px) {
+      width: auto;
+      height: auto;
+      margin-bottom: 5rem;
+    }
+  }
+  &__img {
+    height: 10rem;
+    width: 10rem;
+
+    @include media(1000px) {
+      width: 100px;
+      margin: 2rem;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    width: 250px;
+    height: 100px;
+    // background: red;
+    @include media(1000px) {
+      justify-content: center;
+      margin: 0;
+    }
+    & > * {
+      margin-right: 3rem;
+    }
+  }
+
+  &__copyright {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.06);
+    position: absolute;
+    bottom: 0;
+    padding: 0.7rem;
+    left: 0;
+    text-align: center;
+  }
+}

@@ -1,0 +1,189 @@
+.cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5rem 0rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("./../../../assets/img/bg_cta.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #2d134e;
+}
+
+@media screen and (max-width: 1000px) {
+  .cta {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cta__left {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .cta__right {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 34rem;
+    height: 36rem;
+  }
+}
+
+.cta__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0rem 0rem 0rem 15rem;
+  width: 60%;
+}
+
+@media screen and (max-width: 1200px) {
+  .cta__left {
+    padding: 0rem 0rem 0rem 10rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .cta__left {
+    width: 100%;
+    height: auto;
+    padding: 4rem 2rem;
+    margin: 30px 0px;
+  }
+}
+
+.cta__btn {
+  margin-top: 4rem;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .cta__btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.cta__title {
+  margin-bottom: 2rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 4.2rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .cta__title {
+    font-size: 3.2rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .cta__title {
+    font-size: 3.2rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.cta__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+}
+
+@media screen and (max-width: 1000px) {
+  .cta__content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .cta__content {
+    font-size: 1.2rem;
+  }
+}
+
+.cta__right {
+  width: 40%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 1300px) {
+  .cta__right {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.cta__img {
+  width: 34rem;
+  height: 36rem;
+  border-radius: 25px;
+}
+
+@media screen and (max-width: 1000px) {
+  .cta__img {
+    width: 34rem;
+    height: 36rem;
+  }
+}
+/*# sourceMappingURL=cta.styles.css.map */

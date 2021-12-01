@@ -1,0 +1,39 @@
+.faq {
+  background-image: url("https://ik.imagekit.io/pgtkpta0mpcw/project-folder/compressed/bg-faq-min_OoVBV4se5.png?updatedAt=1638350238731");
+  background-color: #2d134e;
+  background-size: cover;
+
+  // padding: 5rem 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__title {
+    margin-top: 34px;
+    margin-bottom: 5rem;
+    background: linear-gradient(to right, #e77ad9, #5fb6dd);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &__cards {
+    width: 80rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+
+    .cars {
+      margin: 2rem 0rem;
+    }
+    & > * {
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .faq__title {
+    padding-left: 7%;
+  }
+}

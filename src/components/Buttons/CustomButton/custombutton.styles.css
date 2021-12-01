@@ -1,0 +1,93 @@
+.custom-btn__box {
+  position: relative;
+  width: 140px;
+  height: 45px;
+  -webkit-transition: margin 250ms ease-in-out, -webkit-filter 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+  transition: margin 250ms ease-in-out, -webkit-filter 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+  transition: filter 250ms ease-in-out, transform 250ms ease-in-out, margin 250ms ease-in-out;
+  transition: filter 250ms ease-in-out, transform 250ms ease-in-out, margin 250ms ease-in-out, -webkit-filter 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+  cursor: pointer;
+}
+
+.custom-btn__box img {
+  width: 20px;
+  height: 20px;
+  margin: 0rem 1rem;
+}
+
+.custom-btn__box:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-filter: drop-shadow(#e86fce 0px 0px 15px) drop-shadow(#ffffff3b 0px 5px 0px);
+          filter: drop-shadow(#e86fce 0px 0px 15px) drop-shadow(#ffffff3b 0px 5px 0px);
+}
+
+.custom-btn {
+  min-width: 180px;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, right top, from(#8745c3), to(#e86fce));
+  background: linear-gradient(to right, #8745c3, #e86fce);
+  -webkit-box-shadow: inset #ff92e8 0px 0px 20px 2px;
+          box-shadow: inset #ff92e8 0px 0px 20px 2px;
+  -webkit-clip-path: polygon(6% 0, 94% 0, 100% 50%, 94% 100%, 6% 100%, 0% 50%);
+          clip-path: polygon(6% 0, 94% 0, 100% 50%, 94% 100%, 6% 100%, 0% 50%);
+  left: -15%;
+  position: absolute;
+}
+
+.accent-btn__box {
+  position: relative;
+  width: 140px;
+  height: 45px;
+  -webkit-filter: drop-shadow(black 0px 2px 1px), drop-shadow(#000000 0px 4px 1px);
+          filter: drop-shadow(black 0px 2px 1px), drop-shadow(#000000 0px 4px 1px);
+  cursor: pointer;
+}
+
+.accent-btn__box .btn-accent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 180px;
+  height: 45px;
+  padding: 1.4rem 4rem;
+  background: -webkit-gradient(linear, left bottom, left top, from(#8645c341), to(#e86fce3d));
+  background: linear-gradient(to top, #8645c341, #e86fce3d);
+  background: #ffffff1a;
+  -webkit-clip-path: polygon(6% 0, 94% 0, 100% 50%, 94% 100%, 6% 100%, 0% 50%);
+          clip-path: polygon(6% 0, 94% 0, 100% 50%, 94% 100%, 6% 100%, 0% 50%);
+  position: absolute;
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+  white-space: nowrap;
+  left: -15%;
+}
+
+.accent-btn__box .btn-accent:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media screen and (max-width: 700px) {
+  .save-text {
+    font-size: 2vw;
+  }
+}
+/*# sourceMappingURL=custombutton.styles.css.map */

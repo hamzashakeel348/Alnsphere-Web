@@ -1,0 +1,57 @@
+{
+  "name": "alnsphere",
+  "version": "0.1.0",
+  "homepage": "https://alnsphere.com/",
+  "private": true,
+  "dependencies": {
+    "@react-three/fiber": "6.0.16",
+    "@testing-library/jest-dom": "^5.15.0",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "aos": "^2.3.4",
+    "gsap": "^3.8.0",
+    "imagekitio-react": "^1.0.11",
+    "node-sass": "^6.0.1",
+    "parallax-js": "^3.1.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-image-lightbox": "^5.1.4",
+    "react-in-viewport": "^1.0.0-alpha.20",
+    "react-lazy-load-image-component": "^1.5.1",
+    "react-scripts": "4.0.3",
+    "react-slick": "^0.28.1",
+    "react-spring-3d-carousel": "^1.2.1",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^7.3.0",
+    "three": "0.128.0",
+    "typewriter-effect": "^2.18.2",
+    "web-vitals": "^1.1.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "sass": "^1.43.4"
+  }
+}

@@ -1,0 +1,78 @@
+.carousel {
+  color: red;
+}
+
+.carousel .slick-dots {
+  bottom: -5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.carousel .slick-dots li {
+  width: 40px;
+  height: 40px;
+}
+
+.carousel .slick-dots li button {
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+@media screen and (max-width: 700px) {
+  .carousel .slick-dots li button {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.carousel .slick-dots li button::before {
+  color: white;
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-size: 20px;
+  top: 130%;
+}
+
+@media screen and (max-width: 1100px) {
+  .carousel .slick-dots li button::before {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .carousel .slick-dots li button::before {
+    font-size: 14px;
+  }
+}
+
+.carousel__img {
+  width: 27rem;
+  height: 25rem;
+  border-radius: 25px;
+}
+/*# sourceMappingURL=carousel.styles.css.map */

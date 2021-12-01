@@ -1,0 +1,157 @@
+.nobars {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.nobars::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.card {
+  width: 500px;
+  height: 200px;
+  padding: 4rem 2rem;
+  border: 0.3px solid #ffffff2c;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.card .card__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+}
+
+.card .card__header .card__title {
+  min-width: 400px;
+  min-height: 30px;
+  color: #e86fce;
+  font-size: 24px;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.card .card__header .card__expansion {
+  width: 100px;
+  min-height: 30px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: purple;
+}
+
+.card .card__header .card__expansion img {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  will-change: transform;
+  -webkit-transition: -webkit-transform 200ms ease-in-out;
+  transition: -webkit-transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.card__content {
+  width: 70%;
+  height: 100px;
+  overflow: scroll;
+  will-change: height;
+  -webkit-transition: height 200ms ease-in-out !important;
+  transition: height 200ms ease-in-out !important;
+  padding: 0rem 0rem;
+  overflow: hidden;
+}
+
+.sec-card {
+  width: 500px;
+  height: auto;
+  padding: 4rem 2rem;
+  border: 0.3px solid #ffffff2c;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.sec-card .card__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+}
+
+.sec-card .card__header .card__title {
+  min-width: 400px;
+  min-height: 30px;
+  color: #e86fce;
+  font-size: 20px;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.sec-card .card__header .card__expansion {
+  width: 100px;
+  min-height: 30px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: purple;
+}
+
+.sec-card .card__header .card__expansion img {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  will-change: transform;
+  -webkit-transition: -webkit-transform 200ms ease-in-out;
+  transition: -webkit-transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.sec-card__template {
+  width: 70%;
+  height: 0px;
+  will-change: height;
+  -webkit-transition: height 200ms ease-in-out !important;
+  transition: height 200ms ease-in-out !important;
+  padding: 0rem 0rem;
+  overflow: hidden;
+}
+
+.sec-card__exapansion {
+  transition: 0.5s ease;
+}
+/*# sourceMappingURL=card.styles.css.map */

@@ -1,0 +1,17 @@
+.gallery {
+  padding: 10rem 8rem 0 8rem;
+  background-color: #2d1342;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+
+  &__gradient {
+    height: 25rem;
+    background-image: linear-gradient(to top, #2d134e -3%, #e86fce1a 65%);
+
+    clip-path: ellipse(50% 67% at 50% 100%);
+    margin: 0rem -8rem;
+  }
+}

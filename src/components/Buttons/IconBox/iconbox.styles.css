@@ -1,0 +1,94 @@
+.icon-box__large {
+  width: 70px;
+  height: 70px;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid white;
+  -webkit-transition: background 200ms ease, border 200ms ease, -webkit-box-shadow 200ms ease-in-out;
+  transition: background 200ms ease, border 200ms ease, -webkit-box-shadow 200ms ease-in-out;
+  transition: background 200ms ease, border 200ms ease, box-shadow 200ms ease-in-out;
+  transition: background 200ms ease, border 200ms ease, box-shadow 200ms ease-in-out, -webkit-box-shadow 200ms ease-in-out;
+  cursor: pointer;
+  margin: 2rem;
+}
+
+.icon-box__large:hover {
+  border: 2px solid #E86FCE;
+  background: rgba(232, 111, 206, 0.23);
+  -webkit-box-shadow: #e86fce3d 0px 8px 20px 7px;
+          box-shadow: #e86fce3d 0px 8px 20px 7px;
+}
+
+.icon-box__large .icon-box__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.icon-box__large .icon-box__icon img {
+  width: 60%;
+}
+
+.icon-box__small {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid white;
+  -webkit-transition: background 200ms ease, border 200ms ease, -webkit-box-shadow 200ms ease-in-out;
+  transition: background 200ms ease, border 200ms ease, -webkit-box-shadow 200ms ease-in-out;
+  transition: background 200ms ease, border 200ms ease, box-shadow 200ms ease-in-out;
+  transition: background 200ms ease, border 200ms ease, box-shadow 200ms ease-in-out, -webkit-box-shadow 200ms ease-in-out;
+  cursor: pointer;
+  margin: 2rem;
+}
+
+.icon-box__small:hover {
+  border: 2px solid #E86FCE;
+  background: rgba(232, 111, 206, 0.23);
+  -webkit-box-shadow: #e86fce3d 0px 8px 20px 7px;
+          box-shadow: #e86fce3d 0px 8px 20px 7px;
+}
+
+.icon-box__small .icon-box__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.icon-box__small .icon-box__icon img {
+  width: 60%;
+}
+/*# sourceMappingURL=iconbox.styles.css.map */

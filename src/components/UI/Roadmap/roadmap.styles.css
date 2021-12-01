@@ -1,0 +1,94 @@
+.roadmap {
+  background-image: url("./../../../assets/img/bg-roadmap.png");
+  background-color: #2d134e;
+  padding: 5rem 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.roadmap__title {
+  margin-bottom: 4rem;
+}
+
+.roadmap__btns {
+  margin-bottom: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 40rem;
+}
+
+.roadmap__stages {
+  position: relative;
+}
+
+.roadmap__stages > * {
+  margin-bottom: 3rem;
+}
+
+.roadmap__stages .progress-bar {
+  position: absolute;
+  width: 25px;
+  height: calc(100% - 230px);
+  background: #43397a;
+  top: 100px;
+  left: -20%;
+}
+
+.roadmap__stages .progress-bar .first-hexa {
+  position: absolute;
+  top: -20px;
+  left: -15px;
+}
+
+.roadmap__stages .progress-bar .second-hexa {
+  position: absolute;
+  top: 225px;
+  left: -5px;
+  -webkit-filter: drop-shadow(#0000005b 0px 12px 10px);
+          filter: drop-shadow(#0000005b 0px 12px 10px);
+}
+
+.roadmap__stages .progress-bar .third-hexa {
+  position: absolute;
+  top: 450px;
+  left: -5px;
+  -webkit-filter: drop-shadow(#0000005b 0px 12px 10px);
+          filter: drop-shadow(#0000005b 0px 12px 10px);
+}
+
+.roadmap__stages .progress-bar .fourth-hexa {
+  position: absolute;
+  top: 675px;
+  left: -5px;
+  -webkit-filter: drop-shadow(#0000005b 0px 12px 10px);
+          filter: drop-shadow(#0000005b 0px 12px 10px);
+}
+
+.roadmap__stages .progress-bar .fifth-hexa {
+  position: absolute;
+  top: 900px;
+  left: -5px;
+  -webkit-filter: drop-shadow(#0000005b 0px 12px 10px);
+          filter: drop-shadow(#0000005b 0px 12px 10px);
+}
+
+.roadmap__stages .progress-bar .sixth-hexa {
+  position: absolute;
+  top: 1125px;
+  left: -5px;
+  -webkit-filter: drop-shadow(#0000005b 0px 12px 10px);
+          filter: drop-shadow(#0000005b 0px 12px 10px);
+}
+/*# sourceMappingURL=roadmap.styles.css.map */

@@ -1,0 +1,155 @@
+* {
+  font-family: "Space Grotesk", sans-serif !important;
+}
+.roadmap {
+  background-image: url("https://ik.imagekit.io/pgtkpta0mpcw/project-folder/img/bg-roadmap_3mZiX_2ZT.png?updatedAt=1638249594784");
+  // background-color: #2d134e;
+  border-top: 1px solid white;
+  border-radius: 50px;
+  padding: 5rem 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    margin-bottom: 4rem;
+    background: linear-gradient(to left, #8d52f5, #db6dcf);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &__btns {
+    margin-bottom: 11rem;
+    display: flex;
+    justify-content: center;
+    width: 60rem;
+    max-width: 90vw;
+  }
+
+  &__stages {
+    position: relative;
+    & > * {
+      margin-bottom: 3rem;
+    }
+
+    .progress-bar {
+      position: absolute;
+      width: 25px;
+      visibility: visible;
+      height: calc(100% - 230px);
+      background: #43397a;
+      top: 100px;
+      left: 0%;
+
+      .first-hexa {
+        position: absolute;
+        top: -12px;
+        left: -5px;
+      }
+      .second-hexa {
+        position: absolute;
+        top: 285px;
+        left: -5px;
+        filter: drop-shadow(#0000005b 0px 12px 10px);
+      }
+      .third-hexa {
+        position: absolute;
+        top: 560px;
+        left: -5px;
+        filter: drop-shadow(#0000005b 0px 12px 10px);
+      }
+      .fourth-hexa {
+        position: absolute;
+        top: 850px;
+        left: -5px;
+        filter: drop-shadow(#0000005b 0px 12px 10px);
+      }
+      .fifth-hexa {
+        position: absolute;
+        top: 1127px;
+        left: -5px;
+        filter: drop-shadow(#0000005b 0px 12px 10px);
+      }
+      .sixth-hexa {
+        position: absolute;
+        top: 1408px;
+        left: -5px;
+        filter: drop-shadow(#0000005b 0px 12px 10px);
+      }
+      .seventh-hexa {
+        position: absolute;
+        top: 1687px;
+        left: -5px;
+        filter: drop-shadow(#0000005b 0px 12px 10px);
+      }
+      .eighth-hexa {
+        position: absolute;
+        top: 1970px;
+        left: -5px;
+        filter: drop-shadow(#0000005b 0px 12px 10px);
+      }
+      .ninth-hexa {
+        position: absolute;
+        top: 2255px;
+        left: -5px;
+        filter: drop-shadow(#0000005b 0px 12px 10px);
+      }
+      .tenth-hexa {
+        position: absolute;
+        top: 2537px;
+        left: -5px;
+        filter: drop-shadow(#0000005b 0px 12px 10px);
+      }
+    }
+  }
+
+  .custom-btn__box,
+  .accent-btn__box {
+    margin: 0 3rem;
+    font-size: 2.2rem;
+    width: 200px;
+    .custom-btn {
+      min-width: 262px;
+      padding: 1.5rem 2rem;
+    }
+    .btn-accent {
+      padding: 1.5rem 2rem;
+    }
+  }
+
+  .card__content {
+    white-space: pre-line;
+  }
+
+  .showmore-btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .showmore-btn {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.842);
+    font-size: 2rem;
+    cursor: pointer;
+    transition: transform 0.4s linear;
+  }
+  .showmore-btn img {
+    margin-right: 1rem;
+  }
+  .showmore-btn:hover {
+    transform: scale(1.1);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .progress-bar {
+    visibility: hidden !important;
+  }
+  .roadmap__btns {
+    display: inline-table;
+    margin-left: auto;
+  }
+}

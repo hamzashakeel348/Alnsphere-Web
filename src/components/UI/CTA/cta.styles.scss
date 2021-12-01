@@ -1,0 +1,112 @@
+@mixin media($args) {
+  @media screen and (max-width: $args) {
+    @content;
+  }
+}
+
+.cta {
+  display: flex;
+  padding: 5rem 0rem;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://ik.imagekit.io/pgtkpta0mpcw/project-folder/compressed/bg_cta-min_rSN_QXkFv.png?updatedAt=1638350245329");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #2d134e;
+
+  @include media(1000px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__left {
+      order: 2;
+    }
+    &__right {
+      order: 1;
+      width: 34rem;
+      height: 36rem;
+    }
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // padding-right: 7rem;
+    padding: 0rem 0rem 0rem 15rem;
+    width: 60%;
+
+    @include media(1200px) {
+      padding: 0rem 0rem 0rem 10rem;
+    }
+    @include media(1000px) {
+      width: 100%;
+      height: auto;
+      padding: 4rem 2rem;
+      margin: 30px 0px;
+    }
+  }
+  &__btn {
+    margin-top: 4rem;
+    margin-left: 20px;
+    @include media(1000px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__title {
+    margin-bottom: 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 4.2rem;
+
+    @include media(1000px) {
+      font-size: 3.2rem;
+      justify-content: center;
+    }
+    @include media(700px) {
+      font-size: 3.2rem;
+      justify-content: center;
+    }
+  }
+  &__content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+
+    @include media(1000px) {
+      justify-content: center;
+      text-align: center;
+    }
+    @include media(700px) {
+      font-size: 1.2rem;
+    }
+  }
+  &__right {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    // background: red;
+    justify-content: flex-start;
+    align-items: center;
+
+    @include media(1300px) {
+      justify-content: center;
+    }
+  }
+  &__img {
+    width: 34rem;
+    height: 36rem;
+    border-radius: 25px;
+
+    @include media(1000px) {
+      width: 34rem;
+      height: 36rem;
+    }
+  }
+}
