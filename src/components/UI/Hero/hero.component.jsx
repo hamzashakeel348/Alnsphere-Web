@@ -14,6 +14,7 @@ function FadingImage() {
     "https://ik.imagekit.io/pgtkpta0mpcw/project-folder/compressed/disp-min_zbIdLo0CQ.jpg?updatedAt=1638350257474",
   ]);
   const [hovered, setHover] = useState(false);
+
   useFrame(
     () =>
       (ref.current.dispFactor = THREE.MathUtils.lerp(
@@ -61,21 +62,8 @@ function FadingImage() {
 }
 
 export default function HeroFadeImg() {
-  let heroSection = useRef(null);
   let parallax_element = useRef(null);
-  let animatable = useRef(null);
   let typewriterRef = useRef();
-  let parallaxInstance;
-  let base_character;
-  let [leftMargin, setLeftMargin] = useState(0);
-  let [topMargin, setTopMargin] = useState(0);
-  let [elemHeight, setElemHeight] = useState("101");
-  let [elemWidth, setElemWidth] = useState("100%");
-  let [visibility, setVisibility] = useState("hidden");
-  let [animation, setAnimation] = useState("");
-  let [opacity, setOpacity] = useState("0");
-  let [pointerEvents, setPointerEvents] = useState("none");
-  let [bgPositon, setBgPosition] = useState("fixed");
 
   useEffect(() => {
     function parallax(event) {
@@ -172,7 +160,7 @@ export default function HeroFadeImg() {
       </div>
 
       <div className="mobile-parallax-holder">
-        <div class="night">
+        {/* <div class="night">
           <div class="shooting_star"></div>
           <div class="shooting_star"></div>
           <div class="shooting_star"></div>
@@ -193,7 +181,7 @@ export default function HeroFadeImg() {
           <div class="shooting_star"></div>
           <div class="shooting_star"></div>
           <div class="shooting_star"></div>
-        </div>
+        </div> */}
 
         <img
           className="ainsphere-text"
