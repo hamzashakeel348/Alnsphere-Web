@@ -13,7 +13,7 @@ const Navbar = () => {
   let navref = useRef();
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
+    const handler = () => {
       if (window.pageYOffset > 40) {
         navref.current.style.opacity = 1;
         navref.current.style.visibility = "visible";
@@ -23,8 +23,13 @@ const Navbar = () => {
       ) {
         navref.current.style.opacity = 0;
       }
-    });
-  }, []);
+    };
+    window.addEventListener("scroll", handler);
+
+    return () => {
+      window.removeEventListener("scroll", handler);
+    };
+  });
 
   let toggleMenu = () => {
     var navbarHeight = document.querySelector(".navbar");
