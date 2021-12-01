@@ -115,11 +115,8 @@ const Team = () => {
                 return `<div class=${className} >
                               <div class="thumb-wrapper">
                                   <div class="pagination-thumb" >
-                                  <IKImage
-                                  path="${arrayOfTeamMembers[index].image}"
-                                  loading="lazy"
-                                />
-                                      //  <img  src=${arrayOfTeamMembers[index].image} alt="" />
+                                
+                                     <img  src=${arrayOfTeamMembers[index].image} alt="" />
                                   </div>
                               </div>
                               <div class="thumb__member-name"> ${arrayOfTeamMembers[index].name}</div>

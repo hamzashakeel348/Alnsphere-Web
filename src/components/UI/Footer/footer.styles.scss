@@ -13,7 +13,7 @@
   background-color: #2d134e;
   display: flex;
   min-height: 30rem;
-  padding: 6rem 25rem;
+  padding: 6rem 15rem;
   justify-content: space-between;
   align-items: center;
   position: relative;
@@ -26,20 +26,19 @@
   @include media(1000px) {
     width: 100%;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
+
+    padding: 2rem 1rem;
   }
   &__logo {
-    width: 200px;
-    height: 200px;
+    // width: 200px;
+    // height: 200px;
     // background: red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
     @include media(1000px) {
       width: auto;
       height: auto;
-      margin-bottom: 5rem;
+      margin-bottom: 0rem;
     }
   }
   &__img {
@@ -60,19 +59,29 @@
     @include media(1000px) {
       justify-content: center;
       margin: 0;
+
+      a {
+        padding: 1.1rem;
+        width: 55px;
+        height: 55px;
+
+        .iconClassName {
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
     }
     & > * {
       margin-right: 3rem;
     }
   }
+}
 
-  &__copyright {
-    width: 100%;
-    background: rgba(255, 255, 255, 0.06);
-    position: absolute;
-    bottom: 0;
-    padding: 0.7rem;
-    left: 0;
-    text-align: center;
-  }
+.footer__copyright {
+  width: 100%;
+  background: #3d1e66 !important;
+  text-align: center;
+  padding: 1rem;
 }

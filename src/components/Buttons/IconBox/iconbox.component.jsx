@@ -6,14 +6,18 @@ import { IKImage } from "imagekitio-react";
 
 const IconBox = ({ large, image, link, target, iconClassName }) => {
   return (
-    <div className={large ? "icon-box__large" : "icon-box__small"}>
+    <a
+      href={link}
+      target={target}
+      className={large ? "icon-box__large" : "icon-box__small"}
+    >
       <div className={`icon-box__icon `}>
-        <a className={iconClassName} href={link} target={target}>
+        <div className={iconClassName}>
           {/* <img src={image} alt='twiiter' /> */}
           <IKImage path={image} loading="lazy" lqip={{ active: true }} />
-        </a>
+        </div>
       </div>
-    </div>
+    </a>
   );
 };
 
