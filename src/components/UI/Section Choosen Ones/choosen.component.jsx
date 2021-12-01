@@ -2,10 +2,8 @@ import React from "react";
 import "./choosen.styles.scss";
 import { Swiper, SwiperSlide } from "swiper/react/swiper-react.js";
 import "swiper/swiper.min.css";
-
 // import Swiper core and required modules
 import SwiperCore, { EffectCards } from "swiper";
-
 import { IKImage } from "imagekitio-react";
 
 // install Swiper modules

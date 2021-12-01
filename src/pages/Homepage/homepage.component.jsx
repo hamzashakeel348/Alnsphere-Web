@@ -31,7 +31,11 @@ const Homepage = () => {
       clearInterval(scrollToTop);
       clearInterval(clearLoading);
     }, 2000);
-  }, []);
+
+    return () => {
+      clearInterval(clearLoading, null);
+    };
+  });
 
   return (
     <div className="homepage">
