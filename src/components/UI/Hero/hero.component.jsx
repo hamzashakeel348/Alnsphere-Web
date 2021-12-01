@@ -78,7 +78,6 @@ export default function HeroFadeImg() {
   let [bgPositon, setBgPosition] = useState("fixed");
 
   useEffect(() => {
-    document.addEventListener("mousemove", parallax);
     function parallax(event) {
       this.querySelectorAll(".layer").forEach((shift) => {
         const position = shift.getAttribute("data-depth");
@@ -87,17 +86,13 @@ export default function HeroFadeImg() {
         shift.style.transform = `translateX(${x}px) translateY(${y}px)`;
       });
     }
-  }, [
-    visibility,
-    opacity,
-    pointerEvents,
-    animation,
-    elemWidth,
-    elemHeight,
-    leftMargin,
-    topMargin,
-    setBgPosition,
-  ]);
+
+    document.addEventListener("mousemove", parallax);
+
+    return () => {
+      document.removeEventListener("mousemove", parallax);
+    };
+  });
 
   useEffect(() => {
     const handleScroll = (e) => {
@@ -123,7 +118,7 @@ export default function HeroFadeImg() {
       window.removeEventListener("mouseup", handleScroll);
       window.removeEventListener("mousedown", handleScroll);
     };
-  }, []);
+  });
 
   return (
     <section className="hero">
@@ -177,7 +172,7 @@ export default function HeroFadeImg() {
       </div>
 
       <div className="mobile-parallax-holder">
-        {/* <div class="night">
+        <div class="night">
           <div class="shooting_star"></div>
           <div class="shooting_star"></div>
           <div class="shooting_star"></div>
@@ -198,7 +193,7 @@ export default function HeroFadeImg() {
           <div class="shooting_star"></div>
           <div class="shooting_star"></div>
           <div class="shooting_star"></div>
-        </div> */}
+        </div>
 
         <img
           className="ainsphere-text"
