@@ -175,8 +175,9 @@ export default function HeroFadeImg() {
           </div>
         </div>
       </div>
+
       <div className="mobile-parallax-holder">
-        <div class="night">
+        {/* <div class="night">
           <div class="shooting_star"></div>
           <div class="shooting_star"></div>
           <div class="shooting_star"></div>
@@ -197,7 +198,7 @@ export default function HeroFadeImg() {
           <div class="shooting_star"></div>
           <div class="shooting_star"></div>
           <div class="shooting_star"></div>
-        </div>
+        </div> */}
 
         <img
           className="ainsphere-text"
