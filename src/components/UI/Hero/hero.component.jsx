@@ -45,7 +45,7 @@ function FadingImage() {
       window.removeEventListener("mouseup", handleScroll);
       window.removeEventListener("mousedown", handleScroll);
     };
-  }, []);
+  });
 
   return (
     <mesh>
