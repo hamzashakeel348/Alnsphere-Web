@@ -64,8 +64,7 @@ const Overview = () => {
             They grant access to the upcoming AlnSphere RPG Game entirely on the
             Ethereum blockchain and a truly special community. Each artwork is
             unique in its creation with a variety of hand-drawn traits for the
-            highest possible quality.” For the illustration on the right there
-            should be a little hover effect (and background glowing).
+            highest possible quality.
           </p>
         </div>
       </div>

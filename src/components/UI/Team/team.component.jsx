@@ -12,9 +12,9 @@ import "./team.styles.scss";
 import Thumb from "../Thumbs/thumb.component";
 
 const Team = () => {
-  let navigation_previous = useRef(null);
-  let navigation_next = useRef(null);
-  let sliderWrapper = useRef(null);
+  let navigation_previous = useRef("");
+  let navigation_next = useRef("");
+  let sliderWrapper = useRef("");
 
   let itemStyles = {
     width: "500px",
@@ -134,12 +134,7 @@ const Team = () => {
                     <div className="slider-portion">
                       <div className="preview-box">
                         <div className="image-container">
-                          {/* <img src={item.image} alt="" srcset="" /> */}
-                          <LazyLoadImage
-                            src={item.image}
-                            effect="blur"
-                            alt="sjdhkdashj"
-                          />
+                          <img src={item.image} alt="" srcset="" />
                         </div>
                         <div className="name-bar">{item.name}</div>
                         <div className="designation-bar">

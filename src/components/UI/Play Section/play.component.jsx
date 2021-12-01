@@ -7,8 +7,8 @@ import { Autoplay } from "swiper";
 import { IKImage } from "imagekitio-react";
 
 const images = [
-  "/project-folder/compressed/Arena-min_Uot0g5HXp.jpg?updatedAt=1638350239079",
-  "/project-folder/compressed/Quest-min_brNGWHK7ol.jpg?updatedAt=1638350263714",
+  "https://ik.imagekit.io/pgtkpta0mpcw/project-folder/compressed/Arena-min_Uot0g5HXp.jpg?updatedAt=1638350239079",
+  "https://ik.imagekit.io/pgtkpta0mpcw/project-folder/compressed/Quest-min_brNGWHK7ol.jpg?updatedAt=1638350263714",
 ];
 
 const Play = () => {
