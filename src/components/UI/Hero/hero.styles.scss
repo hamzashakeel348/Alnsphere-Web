@@ -367,6 +367,7 @@ $shooting-time: 3000ms;
   height: 44%;
   transform: rotateZ(45deg);
   // animation: sky 200000ms linear infinite;
+  overflow-x: hidden;
 }
 
 .shooting_star {

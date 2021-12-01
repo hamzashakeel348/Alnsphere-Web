@@ -1,5 +1,5 @@
-$base-color : rgb(45, 19, 66, 0.9);
-.menu{
+$base-color: rgb(45, 19, 66, 0.9);
+.menu {
   visibility: hidden;
 }
 .navbar {
@@ -17,7 +17,7 @@ $base-color : rgb(45, 19, 66, 0.9);
   opacity: 0;
   // box-sizing: border-box;
   // pointer-events: none;
- 
+
   transition: opacity 340ms ease;
 
   &__icons {
@@ -64,7 +64,7 @@ $base-color : rgb(45, 19, 66, 0.9);
   }
 }
 
-.navbar .custom-btn__box{
+.navbar .custom-btn__box {
   margin-top: 10px;
 }
 
@@ -72,28 +72,26 @@ $base-color : rgb(45, 19, 66, 0.9);
   display: flex;
 }
 
-.mobile-navbar__logo{
+.mobile-navbar__logo {
   display: none;
 }
-
 
 // responsiveness for mobile phones
 
 @media screen and (max-width: 800px) {
-  
   .mobile-nav {
     flex-direction: row-reverse;
   }
   .mobile-navbar__logo {
     display: block;
   }
-  .navbar__logo{
+  .navbar__logo {
     display: none;
   }
   .navbar__right-icons {
     display: none;
   }
-  .dropDown{
+  .dropDown {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -101,11 +99,10 @@ $base-color : rgb(45, 19, 66, 0.9);
 }
 
 @media screen and (max-width: 500px) {
-  .navbar__icons-box > *{
+  .navbar__icons-box > * {
     margin: 1rem;
   }
-  .navbar{
+  .navbar {
     padding: 1rem;
   }
 }
-
