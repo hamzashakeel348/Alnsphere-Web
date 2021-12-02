@@ -16,6 +16,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   &__desc {
     line-height: 2;
     margin-bottom: 1rem;
@@ -27,6 +28,7 @@
     align-items: center;
     margin-top: 10rem;
     line-height: 21px;
+
     @include media(1100px) {
       flex-direction: column;
       align-items: center;
@@ -41,6 +43,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+
     & > * {
       margin-bottom: 3.5rem;
     }
@@ -88,9 +91,22 @@
   }
 
   &__img-box {
-    height: 55rem;
-    width: 46rem;
     position: relative;
+
+    @media (max-width: 2000px) {
+      height: 80rem;
+      width: 71rem;
+      // border: 2px solid red;
+    }
+    @media (max-width: 1800px) {
+      height: 70rem;
+      width: 61rem;
+    }
+
+    @media (max-width: 1640px) {
+      height: 55rem;
+      width: 46rem;
+    }
 
     @include media(1100px) {
       width: 34rem;
@@ -101,6 +117,7 @@
       width: 100%;
       height: 100%;
       content: "";
+
       position: absolute;
       top: 6%;
       left: -6%;
