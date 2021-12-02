@@ -64,6 +64,7 @@ $val-color: transparent;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    margin: 0 auto;
     .profile-slides-container {
       width: 500px;
       height: 700px;
@@ -71,7 +72,6 @@ $val-color: transparent;
       display: flex;
       justify-content: center;
       align-items: flex-start;
-      // background: red;
       // background: red;
 
       .slider-portion {
@@ -196,6 +196,7 @@ $val-color: transparent;
       width: 45%;
       // background: red;
       height: 100%;
+      // margin: 0 auto;
       .controlling-btn {
         width: 100%;
         max-width: 68rem;
