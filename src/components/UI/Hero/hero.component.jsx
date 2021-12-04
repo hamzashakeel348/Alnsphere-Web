@@ -86,13 +86,11 @@ export default function HeroFadeImg() {
     const handleScroll = (e) => {
       if (window.pageYOffset > 40) {
         parallax_element.current.style.display = "none";
-        typewriterRef.current.style.display = "block";
       } else if (
         window.innerHeight + window.pageYOffset ==
         window.innerHeight
       ) {
         parallax_element.current.style.display = "block";
-        typewriterRef.current.style.display = "none";
       }
     };
 
@@ -191,12 +189,6 @@ export default function HeroFadeImg() {
           alt="AINSPHERE"
         ></img>
       </div>
-
-      <h1 className="Typewriter" ref={typewriterRef}>
-        <span class="glitch" data-text="Error">
-          Error
-        </span>
-      </h1>
 
       <div className="button">
         <CustomButton

@@ -14,7 +14,6 @@ const ChoosenOnes = () => {
     width: "200px",
     height: "400px",
     overflow: "hidden",
-    borderRadius: "30px",
   };
 
   return (

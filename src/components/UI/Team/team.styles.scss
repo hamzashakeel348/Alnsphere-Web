@@ -67,7 +67,7 @@ $val-color: transparent;
     margin: 0 auto;
     .profile-slides-container {
       width: 500px;
-      height: 700px;
+      height: 500px;
       margin-left: 8rem;
       display: flex;
       justify-content: center;
@@ -76,7 +76,7 @@ $val-color: transparent;
 
       .slider-portion {
         width: 470px;
-        height: 630px;
+        height: 575px;
         background: rgba(255, 255, 255, 0.08);
         border-radius: 30px;
         box-shadow: #250a49 8px 18px 20px 4px;
@@ -89,7 +89,7 @@ $val-color: transparent;
           justify-content: center;
           align-items: center;
           flex-direction: column;
-
+          margin: 2em 0em;
           .image-container {
             position: relative;
             width: 250px;
@@ -168,6 +168,7 @@ $val-color: transparent;
           // padding: 10px;
           // height: 80px;
           overflow: scroll;
+          white-space: pre-line;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -182,7 +183,7 @@ $val-color: transparent;
           display: flex;
           justify-content: center;
           align-items: center;
-          margin: 3rem 0rem;
+          margin: 1rem 0rem;
 
           img {
             width: 18px;
@@ -364,7 +365,7 @@ $val-color: transparent;
             }
           }
           .thumb__member-name {
-            margin: 4rem 0rem;
+            margin: 2rem 0rem;
             width: 100%;
             height: 20px;
             display: flex;

@@ -14,7 +14,7 @@ const CustomButton = ({
 }) => {
   if (saveText) {
     return (
-      <div className={`${accent ? "accent-btn__box" : "custom-btn__box"}`}>
+      <div className={`${accent ? "accent-btn__box" : "custom-btn__box "}`}>
         <a
           className={`${
             accent ? "btn-accent save-text" : "custom-btn save-text"
@@ -29,7 +29,7 @@ const CustomButton = ({
     );
   } else {
     return (
-      <div className={`${accent ? "accent-btn__box" : "custom-btn__box"}`}>
+      <div className={`${accent ? "accent-btn__box " : "custom-btn__box "}`}>
         <a
           className={`${accent ? "btn-accent" : "custom-btn"}`}
           href={link}

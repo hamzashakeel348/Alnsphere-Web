@@ -1,5 +1,12 @@
+$large-size-min: 1900px;
+$large-size-max: 2800px;
 @mixin media($args) {
   @media screen and (max-width: $args) {
+    @content;
+  }
+}
+@mixin LargeScreen {
+  @media (max-width: #{$large-size-max}) and (min-width: #{$large-size-min}) {
     @content;
   }
 }
@@ -41,6 +48,9 @@
   clip-path: polygon(6% 0, 94% 0, 100% 50%, 94% 100%, 6% 100%, 0% 50%);
   left: -15%;
   position: absolute;
+  @include LargeScreen {
+    padding: 2.5rem 0;
+  }
 }
 
 .accent-btn__box {
@@ -52,7 +62,9 @@
 
   cursor: pointer;
   // box-shadow: white 0px 0px 20px 5px;
-
+  .Roadmap {
+    min-width: 262px !important;
+  }
   .btn-accent {
     display: flex;
     justify-content: center;
@@ -67,7 +79,9 @@
     transition: transform 250ms ease-in-out;
     white-space: nowrap;
     left: -15%;
-
+    @include LargeScreen {
+      padding: 2.5rem 4rem;
+    }
     &:hover {
       transform: scale(1.1);
     }
@@ -81,10 +95,10 @@
 }
 // responsive design for mobile phones
 @media screen and (max-width: 800px) {
-  .custom-btn__box{
+  .custom-btn__box {
     font-size: 15px;
   }
-  .accent-btn__box .btn-accent{
+  .accent-btn__box .btn-accent {
     // left: -65%;
     margin-top: 30px;
     // width: 30px;

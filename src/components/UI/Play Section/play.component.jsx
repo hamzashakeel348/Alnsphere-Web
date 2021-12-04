@@ -82,9 +82,10 @@ const Play = () => {
             <b>quests</b>, fighting in <b>dungeons</b>, challenging players in{" "}
             <b>PvP</b> and climbing the leader board, collecting rare{" "}
             <b>items</b>, joining <b>guilds</b>, and winning <b>tournaments</b>{" "}
-            containing huge prize pools! Collect <b>$Sphererocks</b> along the
-            way and make us of them in <b>The Grand Hall</b>. Enjoy a thrilling
-            gameplay experience and use your special ability to your advantage.
+            containing huge prize pools! <br />
+            <br /> Collect <b>$Sphererocks</b> along the way and make us of them
+            in <b>The Grand Hall</b>. Enjoy a thrilling gameplay experience and
+            use your special ability to your advantage.
           </p>
         </div>
       </div>
@@ -96,6 +97,7 @@ const Play = () => {
             Team up with other players and defeat <b>boss monsters</b>, loot
             epic items with special <b>bonuses</b>, and make good use of the{" "}
             <b> marketplace</b> to take an edge and win over the competition.
+            <br />
             <br />
             Formulate the best strategy to your success and become the best! Be
             part of our exclusive community and benefit from <b>airdrops</b>,

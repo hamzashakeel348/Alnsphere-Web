@@ -8,7 +8,7 @@ import "swiper/swiper.min.css";
 import "swiper/modules/navigation/navigation.min.css";
 import "swiper/modules/pagination/pagination.min.css";
 import "./team.styles.scss";
-
+import insta from "../../../assets/insta.png";
 import Thumb from "../Thumbs/thumb.component";
 
 const Team = () => {
@@ -29,18 +29,18 @@ const Team = () => {
       image:
         "https://ik.imagekit.io/pgtkpta0mpcw/project-folder/compressed/1_N5TyFI5em.png?updatedAt=1638350225653",
       designation: "Managing Director",
-      description: `8 years of Software & Web Development Experience.
-      Early Bitcoin investor and passionate in NFTs.
+      description: `8 years of Software & Web Development Experience. \nEarly Bitcoin investor and passionate in NFTs.
       `,
+      id: "1",
     },
     {
       name: "Young Paris",
       image:
         "https://ik.imagekit.io/pgtkpta0mpcw/project-folder/compressed/2_TSKABjNOw.png?updatedAt=1638350227528",
       designation: "Advisor",
-      description: `Singer, songwriter, performer and model based in New York and Los Angeles.
-      Signed to Jay-Z, landing features in Essence, Vogue, and W Magazine.
+      description: `Singer, songwriter, performer and model based in \n New York and Los Angeles. Signed to Jay-Z, landing features in Essence, Vogue, and W Magazine.
       `,
+      id: "2",
     },
     {
       name: "Max Steele",
@@ -57,11 +57,11 @@ const Team = () => {
       description: "In love with details. Addicted to improvement.",
     },
     {
-      name: "Tom Oxford",
+      name: "Tom Müller",
       image:
         "https://ik.imagekit.io/pgtkpta0mpcw/project-folder/compressed/5_Ld9AjQBxh.png?updatedAt=1638350228764",
       designation: "Graphics & Illustration",
-      description: `Has worked for high-profile companies like Starbucks, Warner Bros, and others.`,
+      description: `Has worked for high-profile companies before and is a master at his craft.`,
     },
     {
       name: "Matheo Veulner",
@@ -78,11 +78,12 @@ const Team = () => {
         <div className="header-title">OUR TEAM</div>
         <div className="header-info nobars">
           <p>
-            “Special thanks goes out to our employees and partners! We are
-            always searching for experienced employees in development If you
-            believe to fit into our team and provide value we are still hiring."
+            “Special thanks go out to our employees and partners! We are always
+            searching for experienced employees in development & art.
+            <br />
+            If you believe to fit into our team and provide value we are still
+            hiring. Job applications to job@alnsphere.com."
           </p>
-          <p>Job applications to: job@alnsphere.com</p>
         </div>
       </div>
       <div className="team__timeline">
@@ -140,32 +141,52 @@ const Team = () => {
                         <div className="seprator-container">
                           <span></span>
                         </div>
+                        <div className="text-description nobars">
+                          <p>{item.description}</p>
+                        </div>
                       </div>
-                      <div className="text-description nobars">
-                        <p>{item.description}</p>
-                      </div>
+
                       <div className="icons-bar nobars">
-                        <IKImage
-                          path={
-                            "/project-folder/icons/phone_ml5J8yb8f.svg?updatedAt=1638249769906"
-                          }
-                          loading="lazy"
-                          lqip={{ active: true }}
-                        />
-                        <IKImage
-                          path={
-                            "/project-folder/icons/mail_bXeJZd3Mw.svg?updatedAt=1638249768976"
-                          }
-                          loading="lazy"
-                          lqip={{ active: true }}
-                        />
-                        <IKImage
-                          path={
-                            "/project-folder/icons/linkedin_-4Ak5QFcBjX.svg?updatedAt=1638249768412"
-                          }
-                          loading="lazy"
-                          lqip={{ active: true }}
-                        />
+                        {item.id == 1 ? (
+                          <div>
+                            <a href="mailto:hello@alnsphere.com">
+                              <IKImage
+                                path={
+                                  "/project-folder/icons/mail_bXeJZd3Mw.svg?updatedAt=1638249768976"
+                                }
+                                loading="lazy"
+                                lqip={{ active: true }}
+                              />
+                            </a>
+                            <a
+                              href="https://www.instagram.com/noynberg"
+                              target="_blank"
+                            >
+                              <img
+                                src={insta}
+                                style={{ width: "34px", height: "19px" }}
+                              />
+                            </a>{" "}
+                          </div>
+                        ) : (
+                          console.log("2")
+                        )}
+                        {item.id == 2 ? (
+                          <div>
+                            <a
+                              href="https://www.instagram.com/youngparis"
+                              target="_blank"
+                            >
+                              <img
+                                src={insta}
+                                style={{ width: "34px", height: "19px" }}
+                              />
+                            </a>
+                          </div>
+                        ) : (
+                          console.log("2")
+                        )}
+
                         {/* <img src={phone_svg} alt="" srcset="" />
                         <img src={mail_svg} alt="" srcset="" />
                         <img src={linkedIn_svg} alt="" srcset="" /> */}

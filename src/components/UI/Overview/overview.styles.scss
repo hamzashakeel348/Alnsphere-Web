@@ -1,9 +1,15 @@
+$large-size-min: 2500px;
+$large-size-max: 3300px;
 @mixin media($args) {
   @media screen and (max-width: $args) {
     @content;
   }
 }
-
+@mixin LargeScreen {
+  @media (max-width: #{$large-size-max}) and (min-width: #{$large-size-min}) {
+    @content;
+  }
+}
 .overview {
   background: url("https://ik.imagekit.io/pgtkpta0mpcw/project-folder/img/overview-image_gTVkh7J-0.png?updatedAt=1638249651886")
     no-repeat;
@@ -17,9 +23,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @include LargeScreen {
+    padding: 20rem 10rem;
+  }
   &__desc {
     line-height: 2;
     margin-bottom: 1rem;
+    @include LargeScreen {
+      font-size: 30px;
+    }
   }
   &__content {
     font-size: 2rem;
@@ -66,7 +78,9 @@
     @include media(1100px) {
       text-align: center;
     }
-
+    @include LargeScreen {
+      font-size: 8rem;
+    }
     & span {
       background: linear-gradient(to left, #8d52f5, #db6dcf);
       background-clip: text;
@@ -88,14 +102,26 @@
       order: 1;
       margin: 50px;
     }
+    @include LargeScreen {
+      flex-basis: 35%;
+    }
   }
 
   &__img-box {
     position: relative;
-
+    @media (max-width: 2800px) {
+      height: 85rem;
+      width: 65rem;
+      // border: 2px solid red;
+    }
+    @media (max-width: 2400px) {
+      height: 65rem;
+      width: 55rem;
+      // border: 2px solid red;
+    }
     @media (max-width: 2000px) {
-      height: 80rem;
-      width: 71rem;
+      height: 60rem;
+      width: 55rem;
       // border: 2px solid red;
     }
     @media (max-width: 1800px) {
